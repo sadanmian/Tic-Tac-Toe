@@ -48,3 +48,15 @@ Array.from(boxes).forEach((element) => {
         }
     })
 })
+
+// Add onClick Listener to reset
+reset.addEventListener('click', () => {
+    let boxtextss = document.querySelectorAll('.boxtext')
+    Array.from(boxtextss).forEach((element) => {
+        element.innerText = ''
+    })
+    turn = 'X'
+    isgameover = false
+    document.getElementsByClassName('info')[0].innerText = "Turn for " + turn
+    document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "0"
+})
