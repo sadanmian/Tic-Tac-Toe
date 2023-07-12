@@ -44,12 +44,17 @@ nav ul {
     cursor: pointer;
 }
 
-.box:hover {
-    background-color: rgb(246, 232, 246);
-}
 
 .gameInfo {
     padding: 0 34px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameInfo h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .imgbox img {
@@ -73,4 +78,34 @@ nav ul {
 
 .bb-0 {
     border-bottom: 0;
+}
+
+.info {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    color: brown;
+}
+
+#reset {
+    margin: 20px 30px;
+    padding: 5px 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    background-color: brown;
+    border: 2px solid black;
+    font-size: 1.05rem;
+}
+
+#reset:hover {
+    margin: 20px 30px;
+    padding: 5px 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(255, 5, 5);
+    border: 2px solid black;
+    font-size: 1.05rem;
 }
