@@ -112,10 +112,11 @@ nav ul {
 }
 
 .line {
-    background-color: black;
-    width: 30vw;
+    background-color: #0aa214;
+    width: 0vw;
     height: 3px;
     position: absolute;
+    transition: width 1s ease-in-out;
 }
 
 /* Adding Media Query */
