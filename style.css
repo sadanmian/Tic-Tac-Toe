@@ -33,6 +33,7 @@ nav ul {
     grid-template-rows: repeat(3, 10vw);
     grid-template-columns: repeat(3, 10vw);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
 }
 
 .box {
@@ -108,4 +109,52 @@ nav ul {
     background-color: rgb(255, 5, 5);
     border: 2px solid black;
     font-size: 1.05rem;
+}
+
+.line {
+    background-color: black;
+    width: 30vw;
+    height: 3px;
+    position: absolute;
+}
+
+/* Adding Media Query */
+
+@media screen and (max-width:900px) {
+    .gameContainer {
+        flex-wrap: wrap;
+    }
+
+    .gameInfo {
+        margin-top: 50px;
+    }
+
+    .gameInfo h1 {
+        font-size: 1.3rem;
+    }
+
+    .container {
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+
+    .box {
+        font-size: 10vw;
+    }
+
+    .turn_reset {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .info {
+        font-size: 2rem;
+    }
+
+    #reset {
+        font-size: 2.05rem;
+    }
 }
