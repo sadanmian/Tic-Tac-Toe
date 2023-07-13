@@ -158,4 +158,13 @@ nav ul {
     #reset {
         font-size: 2.05rem;
     }
+
+    .line {
+        display: none;
+        background-color: #0aa214;
+        width: 0vw;
+        height: 3px;
+        position: absolute;
+        transition: width 1s ease-in-out;
+    }
 }
